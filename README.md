@@ -37,7 +37,7 @@ base58 编码没有这些字母、数字：
 
 ## 依赖
 
-> [go-bip44](https://github.com/edunuzzi/go-bip44)
-> [btcd](https://github.com/btcsuite/btcd)
-> [btcutil](https://github.com/btcsuite/btcutil)
-> [go-bip39](https://github.com/tyler-smith/go-bip39)
+    > [go-bip44](https://github.com/edunuzzi/go-bip44)
+    > [btcd](https://github.com/btcsuite/btcd)
+    > [btcutil](https://github.com/btcsuite/btcutil)
+    > [go-bip39](https://github.com/tyler-smith/go-bip39)
