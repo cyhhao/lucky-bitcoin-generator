@@ -5,14 +5,17 @@
 
 ## 使用方式
 
-### 直接使用
+使用方式有两种，没有 go 环境的可以直接使用编译好的可执行文件。
+有开发能力的同学，可以选择自己编译运行。
+
+### 1. 直接使用
 根据系统选择执行 main-mac、main-windows.exe、main-linux
 ```
  cd main/
  ./main-xxx
 ```
 
-### 编译
+### 2. 自己编译
 1. 需要安装dep
 2. dep ensure
 3. go run main.go
