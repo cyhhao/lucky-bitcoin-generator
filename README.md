@@ -30,7 +30,7 @@ base58 编码没有这些字母、数字：
 因此靓号地址前缀无法包含以上字母数字，请悉知，不要徒劳。
 
 ## 依赖
-> [](https://github.com/edunuzzi/go-bip44)
-> [](https://github.com/btcsuite/btcd)
-> [](https://github.com/btcsuite/btcutil)
-> [](https://github.com/tyler-smith/go-bip39)
+> [go-bip44](https://github.com/edunuzzi/go-bip44)
+> [btcd](https://github.com/btcsuite/btcd)
+> [btcutil](https://github.com/btcsuite/btcutil)
+> [go-bip39](https://github.com/tyler-smith/go-bip39)
