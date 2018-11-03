@@ -3,12 +3,11 @@ package main
 import (
 	"bip44"
 	"fmt"
-	"strings"
+	"io/ioutil"
 	"main/tools"
 	"os"
-	"io/ioutil"
 	"runtime"
-	"regexp"
+	"strings"
 )
 
 func writeFile(name, data string) {
@@ -34,7 +33,7 @@ var (
 	tt       = tools.TimeTest{}
 	index    = 0
 )
-var rex=regexp.MustCompile(`[a-z][a-z][a-z]`)
+
 func run() {
 	bitSize := 256
 	mnemonic, _ := bip44.NewMnemonic(bitSize)
@@ -43,12 +42,6 @@ func run() {
 	accountKey, _ := xKey.BIP44AccountKey(bip44.BitcoinCoinType, 0, false)
 	externalAddress, _ := accountKey.DeriveP2PKAddress(bip44.ExternalChangeType, 0, bip44.MAINNET)
 	value := externalAddress.Value
-
-	if rex.MatchString(value[1:3]){
-		fmt.Println(value)
-		tt.End()
-		tt.Start("")
-	}
 
 	for _, comp := range findList {
 		if strings.HasPrefix(value[1:], comp) {
